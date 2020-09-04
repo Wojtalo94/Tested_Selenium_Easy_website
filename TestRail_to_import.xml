@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Test Scenario</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1</id>
+				<title>Verification of functionality in Simple From Demo</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correct operation of the functionality of entering numbers, special characters and letters in the &quot;Show message&quot; field and numbers in the &quot;Enter a&quot; and &quot;Enter b&quot; fields</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application
+</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C2</id>
+				<title>Verification of functionality in Checkbox Demo</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the functionality of selecting the &quot;Click on this check box&quot; field and the &quot;Option 1&quot;, &quot;Option 2&quot;, &quot;Option 3&quot; and &quot;Option 4&quot; fields</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application
+</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C3</id>
+				<title>Verification of functionality in Radio Buttons Demo</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description] 
+Checking the functionality of selecting the &quot;Male&quot;, &quot;Female&quot; and &quot;0 to 5&quot;, &quot;5 to 15&quot; and &quot;15 to 50&quot; fields in the &quot;Age Group&quot; fields with checking the selection</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application
+</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C4</id>
+				<title>Verification of functionality in Select Dropdown List</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correct operation of the functionality of selecting the &quot;Select a day (select one):&quot; and &quot;Multi Select List Demo&quot; fields from the list</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C5</id>
+				<title>Verification of functionality in Input Form Submit</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correct operation of the input form functionality</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C6</id>
+				<title>Verification of functionality in Ajax Form Submit</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correctness of the functionality of &quot;Ajax Form Submit with Loading icon&quot;</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C7</id>
+				<title>Verification of functionality in JQuery Select dropdown</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correctness of the functionality in the fields &quot;Drop Down with Search box&quot;, &quot;Select Multiple Values&quot;, &quot;Drop Down with Disabled values&quot; and &quot;Drop-down with Category related options&quot;.</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C8</id>
+				<title>Verification of functionality in Bootstrap Date Picker</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correctness of the functionality in the &quot;Date Example&quot; and &quot;Date Range Example&quot; fields</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C9</id>
+				<title>Verification of functionality in JQuery Date Picker</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correctness of the functionality in the &quot;Date Range Picker&quot; field</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C10</id>
+				<title>Verification of functionality in Table Pagination</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correct operation of the table scrolling functionality with an example of pagination</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C11</id>
+				<title>Verification of functionality in Table Data Search</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the functionality of data searches in tables</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C12</id>
+				<title>Verification of functionality in Table Filter</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correct operation of the table filter functionality</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C13</id>
+				<title>Verification of functionality in Table Sort &amp; Search</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correct operation of the functionality of sorting and searching data in the table</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C14</id>
+				<title>Verification of functionality in Table Data Download</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correct operation of the functionality of downloading and printing data from the table</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C15</id>
+				<title>Verification of functionality in JQuery Download Progress bars</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Check the correct operation of the download functionality in the dialog box</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C16</id>
+				<title>Verification of functionality in Bootstrap Progress bar</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correct operation of the download progress bar functionality</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C17</id>
+				<title>Verification of functionality in Drag &amp; Drop Sliders</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correct operation of the slider functionality</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C18</id>
+				<title>Verification of functionality in Bootstrap Alerts</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correctness of the functionality of Bootstrap alert messages</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C19</id>
+				<title>Verification of functionality in Bootstrap Modals</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correctness of the functionality of &quot;Single Modal Example&quot; and &quot;Multiple Modal Example&quot;</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C20</id>
+				<title>Verification of functionality in Window Popup Modal</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correctness of operation redirecting to social networking sites</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C21</id>
+				<title>Verification of functionality in Progress Bar Modal</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Validation of the functionality of the modal dialog with the access bar</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C22</id>
+				<title>Verification of functionality in Javascript Alerts</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Check the functionality of popup boxes: &quot;Alert box&quot;, &quot;Confirm box&quot;, and &quot;Prompt box&quot;.</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C23</id>
+				<title>Verification of functionality in File Download</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the functionality of the generated file download functionality</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C24</id>
+				<title>Verification of functionality in Bootstrap List Box</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correctness of the functionality of moving elements from two different fields</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C25</id>
+				<title>Verification of functionality in JQuery List Box</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correctness of the functionality of moving and removing elements from two different fields</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C26</id>
+				<title>Verification of functionality in Data List Filter</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correct operation of the data list filter functionality</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C27</id>
+				<title>Verification of functionality in Drag and Drop</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correct operation of the functionality of dragging and lowering elements to the designated field</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C28</id>
+				<title>Verification of functionality in Dynamic Data Loading</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correct operation of the functionality of obtaining random user data</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C29</id>
+				<title>Verification of functionality in Charts Demo</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correctness of the display of graphs</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C30</id>
+				<title>Verification of functionality Menu navigation</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the functionality of redirecting to appropriate pages after selecting one of several items in the &quot;Menu List&quot; at the left of the home page</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C31</id>
+				<title>Verification of sliding ads on the main page at the center of the start page</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking if it is possible to scroll ads on the home page</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C32</id>
+				<title>Verification of sub-menu navigation at the center of the start page</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the functionality of redirecting to appropriate pages after selecting one of several items in the sub-menu at the top of the home page</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C33</id>
+				<title>Verification of redirected to a sponsored website</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the correctness of the functionality of redirecting to the sponsor of the website</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C34</id>
+				<title>Verification of sub-menu navigation in &quot;Tutorials Menu&quot;</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the functionality of redirecting to appropriate pages after selecting one of several items in the &quot;Tutorials Menu&quot; at the bottom of the home page</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C35</id>
+				<title>Verification of sub-menu navigation in &quot;Popular Posts&quot;</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Description]
+Checking the functionality of redirecting to appropriate pages after selecting one of several items in &quot;Popular Posts&quot; at the bottom of the home page</mission>
+										<goals>[Preparatory activities]
+1. Checking if we have the correct version of the application</goals>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Test Cases</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Defect Raports</name>
+		<description></description>
+									</section>
+	</sections>
+</suite>
