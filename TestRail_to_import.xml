@@ -494,7 +494,7 @@ Checking the correct operation of the functionality of obtaining random user dat
 				<title>Verification of functionality in Charts Demo</title>
 												<template>Exploratory Session</template>
 																<type>Functional</type>
-																<priority>Medium</priority>
+																<priority>Low</priority>
 																<estimate></estimate>
 																								<references></references> 
 																				<custom>
@@ -612,10 +612,3926 @@ Checking the functionality of redirecting to appropriate pages after selecting o
 			<section>
 		<name>Test Cases</name>
 		<description></description>
-									</section>
+						
+		<cases>
+									
+						<case>
+				<id>C36</id>
+				<title>[C1] Text input in message</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C1]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of data entry into the Message console 
+
+[Preconditions]
+1. The website is launched
+2. Access to the Message panel
+
+[Test data]
+SSss11::   __-$$%%&gt;&gt;&lt;&lt;]}) // 2*
+
+</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Simple Form Demo&quot; 
+4. In the console &quot;Please enter your Message&quot;, type [SSss11: __-$$%%&gt;&gt;&lt;&lt;]}) // 2*].
+5. Press &quot;Show Message&quot; </steps>
+										<expected>The application will display next to &quot;Your Message&quot; text: &quot;SSss11: __-$$%%%&gt;&gt;&lt;&lt;]}) // 2*&quot;
+
+[Final Result]
+
+The application displayed next to the &quot;Your Message&quot; text: &quot;SSss11: __-$$%%%&gt;&gt;&lt;&lt;]}) // 2*&quot;</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C37</id>
+				<title>[C1] Entering the correct numbers</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C1]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of data entry into the fields &quot;Enter vaule&quot;
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Two Input Fields&quot; panels
+
+[Test data]
+(Enter a): 2
+(Enter b): 3</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Simple Form Demo&quot;
+4. In the console &quot;Enter a&quot;, type [2].
+5. In the console &quot;Enter b&quot;, type [3].
+6. Press &quot;Get total&quot;</steps>
+										<expected>The application will display next to &quot;Total a + b =&quot; number: &quot;5&quot;
+
+[Final Result]
+
+The application displayed next to the &quot;Total a + b =&quot; number: &quot;5&quot;</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C38</id>
+				<title>[C1] Entering incorrect data</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C1]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Checking the input of incorrect data in the fields &quot;Enter value&quot;
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Two Input Fields&quot; panels
+
+[Test data]
+(Enter a): a
+(Enter b): b</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Simple Form Demo&quot;
+4. In the console &quot;Enter a&quot;, type [a].
+5. In the console &quot;Enter b&quot;, type [b].
+6. Press &quot;Get total&quot;</steps>
+										<expected>The application will display a data error 
+
+[Final Result]
+
+The application displayed next to the &quot;Total a + b =&quot; text: &quot;NaN&quot;</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C39</id>
+				<title>[C2] Checking the single checkbox function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C2]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the Single Checkbox functionality 
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Single Checkbox Demo&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Checkbox Demo&quot;
+4. Click on an empty checkbox
+</steps>
+										<expected>The checkbox will be checked
+
+[Final Result]
+
+The checkbox is checked and a message is displayed &quot;Success - Check box is checked&quot;
+
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C40</id>
+				<title>[C2] Checking the multiple checkbox function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C2]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the Multiple Checkbox functionality
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Multiple Checkbox Demo&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Checkbox Demo&quot;
+4. Click on the &quot;Check all&quot; button</steps>
+										<expected>All Checkbox will be checked
+
+[Final Result]
+
+All Checkbox is checked</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C41</id>
+				<title>[C2]  Checking a single Checkbox in Multiple Checkobx function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C2]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of &quot;When you uncheck at least one checkbox, button will change to &quot;Check All&quot; functionality
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Multiple Checkbox Demo&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Checkbox Demo&quot;
+4. Click on the &quot;Check all&quot; button
+5. Click (uncheck) &quot;Option 1&quot; checkbox
+</steps>
+										<expected>&quot;Option 1&quot; checkbox will be unchecked. The button will change to &quot;Check All&quot;.
+
+[Final Result]
+
+&quot;Option 1&quot; checkbox is unchecked. The button will not change to &quot;Check All&quot;, is still &quot;Uncheck all&quot;.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C43</id>
+				<title>[C3] Selecting in the Radio Button Demo function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C3]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+verification of selection and check if the value is selected
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Radio Button Demo&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Radio Button Demo&quot;
+4. Click on the &quot;Male&quot; radio button
+5. Click &quot;Get Checked value&quot; button</steps>
+										<expected>The message &quot;Radio button &apos;Male&apos; is checked&quot; will be displayed
+
+[Final Result]
+
+The message &quot;Radio button &apos;Male&apos; is checked&quot; was displayed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C44</id>
+				<title>[C3]  Checking the Radio Button function without selecting the option</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C3]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the selection check function by not selecting any option 
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Group Radio Buttons Demo&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Radio Button Demo&quot;
+4. Click &quot;Get Checked value&quot; button</steps>
+										<expected>The message &quot;Radio button is Not checked&quot; will be displayed
+
+[Final Result]
+
+The message &quot;Radio button is Not checked&quot; was displayed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C45</id>
+				<title>[C3] Selecting in the Group Sex</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C3]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the gender selection check function 
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Group Radio Buttons Demo&quot; panel
+
+[Test data]
+None
+
+</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Radio Button Demo&quot;
+4. Click on the &quot;Male&quot; radio button
+5. Click &quot;Get values&quot; button</steps>
+										<expected>The message &quot;Sex: Male&quot; will be displayed
+
+[Final Result]
+
+The message &quot;Sex: Male&quot; was displayed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C46</id>
+				<title>[C3] Checking the function without selecting in Group Sex</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C3]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the selection check function by not selecting any option
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Group Radio Buttons Demo&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Radio Button Demo&quot;
+4. Click &quot;Get values&quot; button</steps>
+										<expected>The message &quot;Sex:    &quot; will be displayed
+
+[Final Result]
+
+The message &quot;Sex:    &quot; was displayed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C47</id>
+				<title>[C3] Selecting in the Age Group</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C3]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of selection and check if the value is selected
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Group Radio Buttons Demo&quot; panel
+
+[Test data]
+Non</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Radio Button Demo&quot;
+4. Click on the &quot;0 to 5&quot; radio button
+5. Click &quot;Get values&quot; button</steps>
+										<expected>The message &quot;Age group: 0 - 5&quot; will be displayed
+
+[Final Result]
+
+The message &quot;Age group: 0 - 5&quot; was displayed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C48</id>
+				<title>[C3] Checking the function without selecting in Age Group</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C3]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the selection check function by not selecting any option
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Group Radio Buttons Demo&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Radio Button Demo&quot;
+4. Click &quot;Get value&quot; button</steps>
+										<expected>The message &quot;Age group:     &quot; will be displayed
+
+[Final Result]
+
+The message &quot;Age group:     &quot; was displayed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C49</id>
+				<title>[C4]  Checking the Select a day function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C4]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the functionality of selecting a day of the week from the list and displaying the name of the selected day.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Select List Demo&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Select Dropdown List&quot;
+4. Click &quot;Please select&quot; button
+5. Click &quot;Monday&quot;</steps>
+										<expected>The message &quot;Day selected:- Monday&quot; will be displayed
+
+[Final Result]
+
+The message &quot;Day selected:- Monday&quot; was displayed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C50</id>
+				<title>[C4] Checking the Multi Select List  function with First Select</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C4]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the functionality of selecting a city from the list and displaying the name of the selected city.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Multi-Select List demo&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Select Dropdown List&quot;
+4. Click &quot;New York&quot; 
+5. Click &quot;First Selected&quot; button</steps>
+										<expected>The message &quot;First selected option is: New York&quot; will be displayed
+
+[Final Result]
+
+The message &quot;First selected option is: New York&quot; was displayed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C51</id>
+				<title>[C4] Checking the Multi Select List function with Get All Selected</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C4]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the functionality of selecting a city from the list and displaying the name of the selected city.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Multi-Select List demo&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Select Dropdown List&quot;
+4. Select with the mouse under the last name of the city and drag up to select all items
+5. Click &quot;Get All Selected&quot; button</steps>
+										<expected>The message &quot;Options selected are: Ohio, California, Florida, New Jersey, New York, Texas, Washington, Pennsylvania&quot; will be displayed
+
+[Final Result]
+
+The message &quot;Options selected are:     &quot; was displayed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C52</id>
+				<title>[C4] Checking the Multi Select List function without selecting the option</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C4]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the selection check function by not selecting any option
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Multi-Select List demo&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Select Dropdown List&quot;
+4. Click &quot;Get All Selected&quot; button</steps>
+										<expected>The message &quot;Options selected are: &quot; will be displayed
+
+[Final Result]
+
+The message &quot;Options selected are: &quot; was displayed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C53</id>
+				<title>[C5]  Verification of the form with correct data</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C5]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of filling the form with correct data.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Input form with validations&quot; panel
+
+[Test data]
+(First Name) - Marek
+(Last Name) - Marek
+(E-Mail) - aaa@op.pl
+(Phone #) - 111222333
+(Address) - ul. Krakowska 1
+(City) - Krakow
+(State) - Alaska
+(Zip Code) - 32-323
+(Website or domain name) - www.ja.pl
+(Do you have hosting?) - Yes
+(Project Description) - About me</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Input Form Submit&quot;
+4. In the (First Name) field, type &quot;Marek&quot;
+5. In the (Last Name) field, type &quot;Marek&quot;
+6. In the (E-Mail) field, type &quot;aaa@op.pl&quot;
+7. In the (Phone #) field, type &quot;111222333&quot;
+8. In the (Address) field, type &quot;ul. Krakowska 1&quot;
+9. In the (City) field, type &quot;Krakow&quot;
+10. In the (State) field, type &quot;Alaska&quot;
+11. In the (Zip Code) field, type &quot;32-323&quot;
+12. In the (Website or domain name) field, type &quot;www.ja.pl&quot;
+13. In the (Do you have hosting?) field, type &quot;Yes&quot;
+14. In the (Project Description) field, type &quot;About me&quot;
+15. Click &quot;Send&quot; button</steps>
+										<expected>The form will be sent 
+
+[Final Result]
+
+The form was sent </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C54</id>
+				<title>[C5] Verification of the form with incorrect data</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of filling the form with an incorrect name.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Input form with validations&quot; panel
+
+[Test data]
+(First Name) - 111111</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Input Form Submit&quot;
+4. Enter in the (First Name) field, type &quot;111111&quot;
+5. Click the &quot;Send&quot; button</steps>
+										<expected>The form will not be sent
+
+[Final Result]
+
+The form was sent</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C55</id>
+				<title>[C6] Sending the completed form</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C6]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of filling the form with correct data.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Ajax Form Submit with Loading icon&quot; panel
+
+[Test data]
+(Name) - Marek
+(Comment) - 123.</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Ajax Form Submit&quot;
+4. I the field (Name), type &quot;Marek&quot;.
+5. I the field (Comment), type &quot;123.&quot;.
+6. Click the &quot;submit&quot; button</steps>
+										<expected>The form will be sent.
+
+[Final Result]
+
+The form was sent, and the application displayed a &quot;Form submitted Successfully&quot; message</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C56</id>
+				<title>[C6] Sending a form without a completed Comment</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C6]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of filling the form with correct data and without a completed Comment
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Ajax Form Submit with Loading icon&quot; panel
+
+[Test data]
+(Name) - Marek</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Ajax Form Submit&quot;
+4. I the field (Name), type &quot;Marek&quot;.
+5. Click the &quot;submit&quot; button</steps>
+										<expected>The form will be sent.
+
+[Final Result]
+
+The form was sent, and the application displayed a &quot;Form submitted Successfully&quot; message</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C57</id>
+				<title>[C6] Sending a empty Form</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C6]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of filling the form without data.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Ajax Form Submit with Loading icon&quot; panel
+
+[Test data]
+none</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Ajax Form Submit&quot;
+4. Click the &quot;submit&quot; button</steps>
+										<expected>The form will not be sent.
+
+[Final Result]
+
+The form was not sent and the application has marked the &quot;Name&quot; box in red</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C58</id>
+				<title>[C7] Selecting in the Drop Down with Search box</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C7]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the country selection function.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Drop Down with Search box&quot; panel
+
+[Test data]
+(Country) - Denmark</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;JQuery Select dropdown&quot;
+4. Click on the triangle to expand the list 
+5. Enter &quot;Denmark&quot;
+6. Press &quot;Denmark&quot; on the list
+</steps>
+										<expected>Country Denmark will be selected 
+
+[Final Result]
+
+Country Denmark was selected</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C59</id>
+				<title>[C7] Selecting in the Select Multiple Values</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C7]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the State selection function.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Select Multiple Values&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;JQuery Select dropdown&quot;
+4. Click on the &quot;Select state(s)&quot; field 
+5. Press &quot;Alaska&quot;
+6. Press &quot;Arizona&quot;</steps>
+										<expected>State Alaska and Arizona will be selected
+
+[Final Result]
+
+State Alaska and Arizona was selected</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C60</id>
+				<title>[C7] Selecting in the Drop Down with Disabled Values</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C7]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the US Outlying Territories selection function with disabled values.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Drop Down with Disabled Values&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;JQuery Select dropdown&quot;
+4. Click on the &quot;American Samoa&quot; field
+5. Press &quot;Puerto Rico&quot;
+6. Try to press &quot;Guam&quot;</steps>
+										<expected>The US Outlying Territories Puerto Rico will be selected and Guam will be not selected
+
+[Final Result]
+
+The US Outlying Territories Puerto Rico was selected and Guam was not selected</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C61</id>
+				<title>[C7] Selecting in the Drop Down with Category related options</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C7]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the Programming language selection function. 
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Drop-down with Category related options&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;JQuery Select dropdown&quot;
+4. Click on the &quot;Python&quot; field
+5. Press &quot;Java&quot;
+
+</steps>
+										<expected>The Programming language Java will be selected.
+
+[Final Result]
+
+The Programming language Java was selected.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C62</id>
+				<title>[C8] Selecting a earlier date</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C8]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of selecting an earlier date than today.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Date Example&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Date pickers&quot;
+3. Press &quot;Bootstrap Date Picker&quot;
+4. Click on the &quot;dd/mm/yyyy&quot; field
+5. Select a 02/09/2020 date.</steps>
+										<expected>The 02/09/2020 date will be selected.
+
+[Final Result]
+
+The 02/09/2020 date was selected.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C63</id>
+				<title>[C8]  Selecting a later date</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C8]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of selecting a later date than today.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Date Example&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Date pickers&quot;
+3. Press &quot;Bootstrap Date Picker&quot;
+4. Click on the &quot;dd/mm/yyyy&quot; field
+5. Try to select tomorrow&apos;s day </steps>
+										<expected>Tomorrow&apos;s date will not be selected.
+
+[Final Result]
+
+Tomorrow&apos;s date was not selected.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C64</id>
+				<title>[C8] Sunday selection in the Date Range Example function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C8]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of selecting a Sunday on a date.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Date Range Example&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Date pickers&quot;
+3. Press &quot;Bootstrap Date Picker&quot;
+4. Click on the &quot;Start date&quot; field
+5. Try to select Sunday</steps>
+										<expected>Sunday will not be selected.
+
+[Final Result]
+
+Sunday was not selected.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C65</id>
+				<title>[C8] Selection of the first date in the Date Range Example function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C8]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of selecting an earlier date than today.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Date Range Example&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Date pickers&quot;
+3. Press &quot;Bootstrap Date Picker&quot;
+4. Click on the &quot;Start date&quot; field
+5. Select a 02/09/2020 date.</steps>
+										<expected>The 02/09/2020 date will be selected in &quot;Start date&quot; and &quot;End Date&quot;
+
+[Final Result]
+
+The 02/09/2020 date was selected in &quot;Start date&quot; and &quot;End Date&quot;</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C66</id>
+				<title>[C8] Selecting a second date for an earlier one in the Date Range Example function</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of selecting the second date for an earlier one then the first date
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Date Range Example&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Date pickers&quot;
+3. Press &quot;Bootstrap Date Picker&quot;
+4. Click on the &quot;Start date&quot; field
+5. Select a 02/09/2020 date.
+6. Click on the &quot;02/09/2020&quot; in &quot;End date&quot; field
+7. Select a 01/09/2020 date.</steps>
+										<expected>The program will not accept the second date as earlier 
+
+[Final Result]
+
+The first 02/09/2020 date was been change to a 01/09/2020 date. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C67</id>
+				<title>[C9] Selection of the first date in the Date Range Picker function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C9]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of selecting an earlier date than today.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Date Range Picker&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Date pickers&quot;
+3. Press &quot;JQuery Date Picker&quot;
+4. Click on the empty field next to &quot;From&quot;
+5. Select a 02/09/2020 date.</steps>
+										<expected>The 02/09/2020 date will be selected in &quot;Start date&quot; and &quot;End Date&quot;
+
+[Final Result]
+
+The 02/09/2020 date was selected in &quot;Start date&quot; and &quot;End Date&quot;</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C68</id>
+				<title>[C9] Selecting a second date for an earlier one in the Date Range Picker function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C9]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of selecting the second date for an earlier one then the first date
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Date Range Picker&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Date pickers&quot;
+3. Press &quot;JQuery Date Picker&quot;
+4. Click on the empty field next to &quot;From&quot;
+5. Select a 02/09/2020 date.
+6. Click on the &quot;02/09/2020&quot; in &quot;End date&quot; field
+7. Try to select a 01/09/2020 date</steps>
+										<expected>The program will not accept the second date as earlier
+
+[Final Result]
+
+It is not possible to select the second date as earlier.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C69</id>
+				<title>[C10] Navigating the Table with Pagination Example function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C10]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of navigating the Table. 
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Table with Pagination Example&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Pagination&quot;
+4. Press &quot;2&quot; to scroll to the next page 
+5. Press &quot;3&quot; to scroll to the next page 
+6. Press &quot;&lt;&lt;&quot; to scroll to the previous page 
+7. Press &quot;&lt;&lt;&quot; to scroll to the previous page </steps>
+										<expected>Scrolled to 3 pages of the table and then to the first one. 
+
+[Final Result]
+
+Scrolled to 3 pages of the table and then to the first one. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C70</id>
+				<title>[C11] Searching in the Task function by Task</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C11]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of searching in the Table by Task.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Tasks&quot; Table
+
+[Test data]
+(Task) Wireframe</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Data Search&quot;
+4. Click in the &quot;Filter by Task / Assignee / Status&quot; field
+5. Enter a &quot;Wireframes&quot;
+</steps>
+										<expected>All &quot;Wireframes&quot; tasks are displayed in the table.
+
+[Final Result]
+
+All &quot;Wireframes&quot; tasks are displayed in the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C71</id>
+				<title>[C11] Searching in the Task function by Assignee</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C11]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of searching in the Table by Assignee.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Tasks&quot; Table
+
+[Test data]
+(Assignee) John</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Data Search&quot;
+4. Click in the &quot;Filter by Task / Assignee / Status&quot; field
+5. Enter a &quot;John&quot;</steps>
+										<expected>All &quot;John&quot; assignees are displayed in the table.
+
+[Final Result]
+
+All &quot;John&quot; assignees are displayed in the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C72</id>
+				<title>[C11] Searching in the Task function by Status</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C11]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of searching in the Table by Status.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Tasks&quot; Table
+
+[Test data]
+(Status) failed qa</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Data Search&quot;
+4. Click in the &quot;Filter by Task / Assignee / Status&quot; field
+5. Enter a &quot;failed qa&quot;</steps>
+										<expected>All &quot;failed qa&quot; statuses are displayed in the table.
+
+[Final Result]
+
+All &quot;failed qa&quot; statuses are displayed in the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C73</id>
+				<title>[C11] Searching in the Listed User function by number</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C11]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of searching in the Table by number.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Listed Users&quot; Table
+
+[Test data]
+(number) 3</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Data Search&quot;
+4. Click in the &quot;Filter&quot; button
+5. Click in the &quot;#&quot; field
+5. Enter a &quot;3&quot;</steps>
+										<expected>All &quot;3&quot; numbers are displayed in the table.
+
+[Final Result]
+
+All &quot;3&quot; numbers are displayed in the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C74</id>
+				<title>[C11] Searching in the Listed User function by username</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C11]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of searching in the Table by username.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Listed Users&quot; Table
+
+[Test data]
+(username) jacobs</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Data Search&quot;
+4. Click in the &quot;Filter&quot; button
+5. Click in the &quot;Username&quot; field
+6. Enter a &quot;jacobs&quot;</steps>
+										<expected>All &quot;jacobs&quot; usernames are displayed in the table.
+
+[Final Result]
+
+All &quot;jacobs&quot; usernames are displayed in the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C75</id>
+				<title>[C11] Searching in the Listed User function by First Name</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C11]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of searching in the Table by First Name.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Listed Users&quot; Table
+
+[Test data]
+(First Name) Zieko</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Data Search&quot;
+4. Click in the &quot;Filter&quot; button
+5. Click in the &quot;First Name&quot; field
+6. Enter a &quot;Zieko&quot;</steps>
+										<expected>All &quot;Zieko&quot; First Names are displayed in the table.
+
+[Final Result]
+
+All &quot;Zieko&quot; First Names are displayed in the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C76</id>
+				<title>[C11] Searching in the Listed User function by Last Name</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C11]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of searching in the Table by Last Name.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Listed Users&quot; Table
+
+[Test data]
+(Last Name) Karano</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Data Search&quot;
+4. Click in the &quot;Filter&quot; button
+5. Click in the &quot;Last Name&quot; field
+6. Enter a &quot;Karano&quot;</steps>
+										<expected>All &quot;Karano&quot; Last Names are displayed in the table.
+
+[Final Result]
+
+All &quot;Karano&quot; Last Names are displayed in the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C77</id>
+				<title>[C12] Filtering of searches in the Filter Records function by green color</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C12]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the search filtering function in the table using the color buttons 
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Filter Records&quot; Table
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Filter&quot;
+4. Press the &quot;Green&quot; button</steps>
+										<expected>All &quot;Green&quot; items are displayed in the table.
+
+[Final Result]
+
+All &quot;Green&quot; items are displayed in the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C78</id>
+				<title>[C12] Filtering of searches in the Filter Records function by orange color</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C12]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the search filtering function in the table using the color buttons
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Filter Records&quot; Table
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Filter&quot;
+4. Press the &quot;Oragne&quot; button</steps>
+										<expected>All &quot;Orange&quot; items are displayed in the table.
+
+[Final Result]
+
+All &quot;Orange&quot; items are displayed in the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C79</id>
+				<title>[C12] Filtering of searches in the Filter Records function by red color</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C12]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the search filtering function in the table using the color buttons
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Filter Records&quot; Table
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Filter&quot;
+4. Press the &quot;Red&quot; button</steps>
+										<expected>All &quot;Red&quot; items are displayed in the table.
+
+[Final Result]
+
+All &quot;Red&quot; items are displayed in the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C80</id>
+				<title>[C13] Navigating the Table sort and search function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C13]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the search filtering function in the table using the color buttons
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Table Sort And Search Demo&quot; Table
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Sort &amp; Search&quot;
+4. Press &quot;2&quot; to scroll to the next page
+5. Press &quot;3&quot; to scroll to the next page
+6. Press &quot;4&quot; to scroll to the next page
+7. Press &quot;Previous&quot; to scroll to the previous page
+8. Press &quot;Previous&quot; to scroll to the previous page
+9. Press &quot;Previous&quot; to scroll to the previous page</steps>
+										<expected>Scrolled to 4 pages of the table and then to the first one.
+
+[Final Result]
+
+Scrolled to 4 pages of the table and then to the first one.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C81</id>
+				<title>[C13] Changing the display of table values</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C13]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the table functions to increase the content display.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Table Sort And Search Demo&quot; Table
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Sort &amp; Search&quot;
+4. Click on the &quot;10&quot; field next to &quot;Show&quot;.
+5. Press &quot;50&quot; on the list.
+</steps>
+										<expected>A maximum of 50 items will be displayed in the table 
+
+[Final Result]
+
+A maximum of 50 items are displayed in the table </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C82</id>
+				<title>[C13] Sorting table by Name</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C13]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of table by Name sorting function.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Table Sort And Search Demo&quot; Table
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Sort &amp; Search&quot;
+4. Click on the &quot;Name&quot; in the table.
+</steps>
+										<expected>The table was sorted by name.
+
+[Final Result]
+
+The table was sorted by name </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C83</id>
+				<title>[C13] Sorting table by Position</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C13]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of table by Position sorting function.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Table Sort And Search Demo&quot; Table
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Sort &amp; Search&quot;
+4. Click on the &quot;Position&quot; in the table.</steps>
+										<expected>The table was sorted by position.
+
+[Final Result]
+
+The table was sorted by position. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C84</id>
+				<title>[C13] Sorting table by Office</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C13]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of table by Office sorting function.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Table Sort And Search Demo&quot; Table
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Sort &amp; Search&quot;
+4. Click on the &quot;Office&quot; in the table.</steps>
+										<expected>The table was sorted by the office.
+
+[Final Result]
+
+The table was sorted by the office.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C85</id>
+				<title>[C13] Sorting table by age</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of table by Age sorting function.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Table Sort And Search Demo&quot; Table
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Sort &amp; Search&quot;
+4. Click on the &quot;Age&quot; in the table.</steps>
+										<expected>The table was sorted by age.
+
+[Final Result]
+
+The table was sorted by age.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C86</id>
+				<title>[C13] Sorting table by start date</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C13]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of table by Start Date sorting function.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Table Sort And Search Demo&quot; Table
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Sort &amp; Search&quot;
+4. Click on the &quot;Start Date&quot; in the table.</steps>
+										<expected>The table was sorted by Start Date.
+
+[Final Result]
+
+The table was sorted by Start Date.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C87</id>
+				<title>[C13] Sorting table by salary</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of table by Salary sorting function.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Table Sort And Search Demo&quot; Table
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Sort &amp; Search&quot;
+4. Click on the &quot;Salary&quot; in the table.</steps>
+										<expected>The table was sorted by salary.
+
+[Final Result]
+
+The table was sorted by salary.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C88</id>
+				<title>[C13] Searching for values in the search function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C13]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of searching in the Table by selected word.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Table Sort And Search Demo&quot; Table
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Sort &amp; Search&quot;
+4. Click on the empty field next to &quot;Search: &quot;
+5. Enter &quot;Dev&quot;</steps>
+										<expected>All &quot;Dev&quot; words are displayed in the table.
+
+[Final Result]
+
+All &quot;Dev&quot; words are displayed in the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C89</id>
+				<title>[C14] Checking the table printing function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C14]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Checking the display function of the print box with the data from the table marked
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Table Data Download&quot; Table
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Data Download&quot;
+4. Select the entire table with the mouse.
+5. Click &quot;Print&quot;</steps>
+										<expected>A window appeared with a print preview of the entire table selected earlier. 
+
+[Final Result]
+
+A window appeared with a print preview of the entire table selected earlier. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C90</id>
+				<title>[C15] Checking the operation of the download function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C15]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the operation of the download function in the application. 
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot; Progress Bars &amp; Sliders&quot;
+3. Press &quot;JQuery Download Progress bars&quot;
+4. Click on the &quot;Start Download&quot; button
+</steps>
+										<expected>A window will appear with a message about downloading the file.
+
+[Final Result]
+
+A window will appear with a message about downloading the file.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C91</id>
+				<title>[C15] Cancel download in JQuery UI Progress bar function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C15]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the operation of the canceling download function in the application. 
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot; Progress Bars &amp; Sliders&quot;
+3. Press &quot;JQuery Download Progress bars&quot;
+4. Click on the &quot;Start Download&quot; button
+5. Click on the &quot;Cancel Download&quot; button</steps>
+										<expected>The downloaded file will be canceled.
+
+[Final Result]
+
+The downloaded file was canceled.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C92</id>
+				<title>[C16] Checking the operation of the download function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C16]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the operation of the download function in the application.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot; Progress Bars &amp; Sliders&quot;
+3. Press &quot;Bootstrap Progress bar&quot;
+4. Click on the &quot;Download Size: 20480kb&quot; button</steps>
+										<expected>A window will appear with a message about downloading the file.
+
+[Final Result]
+
+A window will appear with a message about downloading the file.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C93</id>
+				<title>[C17] Change of value in the grey line to higher</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C17]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the function of changing the value to another using the slider.
+
+[Preconditions]
+1. The website is launched
+2. Access to the slider&apos;s function. 
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot; Progress Bars &amp; Sliders&quot;
+3. Press &quot;Drag &amp; Drop Sliders&quot;
+4. Click and move the Grey slider to the right.</steps>
+										<expected>The Grey field value will be greater than 10. 
+
+[Final Result]
+
+The Grey field value is greater than 10. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C94</id>
+				<title>[C17] Change of value in the red line to lower</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C17]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the function of changing the value to another using the slider.
+
+[Preconditions]
+1. The website is launched
+2. Access to the slider&apos;s function.
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot; Progress Bars &amp; Sliders&quot;
+3. Press &quot;Drag &amp; Drop Sliders&quot;
+4. Click and move the Red slider to the left.</steps>
+										<expected>The Red field value will be smaller than 50.
+
+[Final Result]
+
+The Red field value is smaller than 50.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C95</id>
+				<title>[C18] Verification of self-closing green message function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C18]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Checking the operation of the message display function in the green autocloseable field.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Bootstrap Alerts&quot;
+4. Click &quot;Autocloseable success message&quot; green button
+</steps>
+										<expected>The &quot;Autocloseable success message&quot; green window appears with &quot;I&apos;m an autocloseable success message. I will hide in 5 seconds.&quot; message. 
+
+[Final Result]
+
+The &quot;Autocloseable success message&quot; green window appears with &quot;I&apos;m an autocloseable success message. I will hide in 5 seconds.&quot; message. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C96</id>
+				<title>[C18] Verification of the green message display and closing functions</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C18]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Checking the function of displaying and closing messages in the green field
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Bootstrap Alerts&quot;
+4. Click &quot;Normal success message&quot; green button
+5. Click &quot;X&quot; button to close the message</steps>
+										<expected>The &quot;Normal success message&quot; green window appears and was closed. 
+
+[Final Result]
+
+The &quot;Normal success message&quot; green window appears and was closed. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C97</id>
+				<title>[C18] Verification of self-closing orange message function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C18]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Checking the operation of the message display function in the orange autocloseable field.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Bootstrap Alerts&quot;
+4. Click &quot;Autocloseable success message&quot; orange button
+</steps>
+										<expected>The &quot;Autocloseable success message&quot; orange window appears with &quot;I&apos;m an autocloseable success message. I will hide in 5 seconds.&quot; message.
+
+[Final Result]
+
+The &quot;Autocloseable success message&quot; orange window appears with &quot;I&apos;m an autocloseable success message. I will hide in 5 seconds.&quot; message.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C98</id>
+				<title>[C18] Verification of the orange message display and closing functions</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C18]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Checking the function of displaying and closing messages in the orange field.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None
+
+</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Bootstrap Alerts&quot;
+4. Click &quot;Normal success message&quot; orange button
+5. Click &quot;X&quot; button to close the message</steps>
+										<expected>The &quot;Normal success message&quot; orange window appears and was closed.
+
+[Final Result]
+
+The &quot;Normal success message&quot; orange window appears and was closed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C99</id>
+				<title>[C18] Verification of self-closing red message function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C18]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Checking the operation of the message display function in the red autocloseable field.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Bootstrap Alerts&quot;
+4. Click &quot;Autocloseable success message&quot; red button</steps>
+										<expected>The &quot;Autocloseable success message&quot; red window appears with &quot;I&apos;m an autocloseable success message. I will hide in 5 seconds.&quot; message.
+
+[Final Result]
+
+The &quot;Autocloseable success message&quot; red window appears with &quot;I&apos;m an autocloseable success message. I will hide in 5 seconds.&quot; message.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C100</id>
+				<title>[C18] Verification of the red message display and closing functions</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C18]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Checking the function of displaying and closing messages in the red field.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Bootstrap Alerts&quot;
+4. Click &quot;Normal success message&quot; red button
+5. Click &quot;X&quot; button to close the message</steps>
+										<expected>The &quot;Normal success message&quot; red window appears and was closed.
+
+[Final Result]
+
+The &quot;Normal success message&quot; red window appears and was closed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C101</id>
+				<title>[C18] Verification of self-closing blue message function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C18]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Checking the operation of the message display function in the blue autocloseable field.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Bootstrap Alerts&quot;
+4. Click &quot;Autocloseable success message&quot; blue button</steps>
+										<expected>The &quot;Autocloseable success message&quot; blue window appears with &quot;I&apos;m an autocloseable success message. I will hide in 5 seconds.&quot; message.
+
+[Final Result]
+
+The &quot;Autocloseable success message&quot; blue window appears with &quot;I&apos;m an autocloseable success message. I will hide in 5 seconds.&quot; message.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C102</id>
+				<title>[C18] Verification of the blue message display and closing functions</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C18]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Checking the function of displaying and closing messages in the blue field.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Bootstrap Alerts&quot;
+4. Click &quot;Normal success message&quot; blue button
+5. Click &quot;X&quot; button to close the message</steps>
+										<expected>The &quot;Normal success message&quot; blue window appears and was closed.
+
+[Final Result]
+
+The &quot;Normal success message&quot; blue window appears and was closed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C103</id>
+				<title>[C19]  Checking the modal dialog displays</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C19]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the function of displaying and closing dialog. 
+
+[Preconditions]
+1. The website is launched
+2. Access to &quot;Single Modal Example&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Bootstrap Modals&quot;
+4. Click &quot;Launch modal&quot; button
+5. Click &quot;Save changes&quot; button
+</steps>
+										<expected>The &quot;Modal Title&quot; window will be opened and closed. 
+
+[Final Result]
+
+The &quot;Modal Title&quot; window will be opened and closed. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C104</id>
+				<title>[C19]  Checking the multiple modal dialog displays</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C19]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the function of displaying and closing multi dialogs.
+
+[Preconditions]
+1. The website is launched
+2. Access to &quot;Multiple Modal Example&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Bootstrap Modals&quot;
+4. Click &quot;Launch modal&quot; button
+5. Click &quot;Launch modal&quot; button in the window
+5. Click &quot;Close&quot; button
+6. Click &quot;Save changes&quot; button</steps>
+										<expected>The &quot;First Modal&quot; and &quot;Modal 2&quot; window will be opened and closed.
+
+[Final Result]
+
+The &quot;First Modal&quot; and &quot;Modal 2&quot; window will be opened and closed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C105</id>
+				<title>[C20] Checking the Twitter page display function to follow</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C20]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the function of opening the Twitter page in a new window.
+
+[Preconditions]
+1. The website is launched
+2. Access to &quot;Single Window Popup&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Window Popup Modal&quot;
+4. Click &quot;Follow On Twitter&quot; button.</steps>
+										<expected>The Twitter page will appear.
+
+
+[Final Result]
+
+The Twitter page appeared.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C106</id>
+				<title>[C20] Checking the Facebook page display function to Like page</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C20]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the function of opening the Twitter page in a new window.
+
+[Preconditions]
+1. The website is launched
+2. Access to &quot;Single Window Popup&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Window Popup Modal&quot;
+4. Click &quot;Like us On Facebook&quot; button.</steps>
+										<expected>The Facebook page will appear.
+
+[Final Result]
+
+The Facebook page appeared.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C107</id>
+				<title>[C20] Checking the Twitter and Facebook page display function to follow</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C20]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the function of opening the Twitter and Facebook page in a new window.
+
+[Preconditions]
+1. The website is launched
+2. Access to &quot;Multiple Window Modal&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Window Popup Modal&quot;
+4. Click &quot;Follow Twitter &amp; Facebook&quot; button.</steps>
+										<expected>The Twitter and Facebook page will appear.
+
+[Final Result]
+
+The Twitter page appeared. The Facebook page will not appear. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C108</id>
+				<title>[C20] Checking the Twitter, Facebook and Google Plus page display function to follow</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C20]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the function of opening the Twitter, Facebook, and Google Plus page in a new window.
+
+[Preconditions]
+1. The website is launched
+2. Access to &quot;Multiple Window Modal&quot; panel
+
+[Test data]
+None
+
+</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Window Popup Modal&quot;
+4. Click &quot;Follow All&quot; button.</steps>
+										<expected>Twitter, Facebook, and Google Plus page will appear.
+
+[Final Result]
+
+The Facebook page appeared. The Twitter and Google Plus page will not appear.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C109</id>
+				<title>[C21] Checking the display of a simple dialog</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C21]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the function of the self-closing loading window.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Progress Bar Modal&quot;
+4. Click the blue &quot;Show dialog&quot; button.</steps>
+										<expected>The window with loading will appear and disappear in 2 seconds.
+
+[Final Result]
+
+The window with loading appears and disappears in 2 seconds.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C110</id>
+				<title>[C21] Checking the display of a dialog with custom message</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C21]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the function of the self-closing loading window with a custom message.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Progress Bar Modal&quot;
+4. Click the green &quot;Show dialog&quot; button.</steps>
+										<expected>The window with loading and custom message will appear and disappear in 3 seconds.
+
+[Final Result]
+
+The window with loading and custom message appears and disappears in 3 seconds.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C111</id>
+				<title>[C21] Checking the display of a dialog with custom settings</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C21]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the function of the self-closing loading window with custom settings.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Progress Bar Modal&quot;
+4. Click the orange &quot;Show dialog&quot; button.</steps>
+										<expected>The window with loading and &quot;Hello Mr. Alert !&quot; message will appear and disappear in 3 seconds.
+
+[Final Result]
+
+The window with loading and &quot;Hello Mr. Alert !&quot; message appears and disappears in 3 seconds.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C112</id>
+				<title>[C22] Checking the alert display function from the window</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C22]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the operation of the alert display function in a new window .
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Java Script Alert Box&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Javascript Alerts&quot;
+4. Click the &quot;Click me!&quot; button in &quot;Java Script Alert Box&quot; panel </steps>
+										<expected>The window with &quot;I am an alert box!&quot; message will appear.
+
+[Final Result]
+
+The window with &quot;I am an alert box!&quot; message appears.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C113</id>
+				<title>[C22] Checking the operation of the button click function in the window that appears when you click Click me</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C22]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the operation of the alert display function with a button in a new window.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Java Script Confirm Box&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Javascript Alerts&quot;
+4. Click the &quot;Click me!&quot; button in &quot;Java Script Confirm Box&quot; panel
+5. Click &quot;Ok&quot; button </steps>
+										<expected>The window with &quot;Press a button!&quot; message will appear.
+
+[Final Result]
+
+The window with &quot;Press a button!&quot; message appears. Appeared &quot;You pressed OK!&quot; message. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C114</id>
+				<title>[C22] Checking the function of displaying the entered name in the displayed window</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the operation of the alert display function with a with name entry function in a new window.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Java Script Alert Box&quot; panel
+
+[Test data]
+(Name) Marek</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Javascript Alerts&quot;
+4. Click the &quot;Click for Prompt Box&quot; button in &quot;Java Script Alert Box&quot; panel
+5. Click &quot;Enter name&quot; field
+6. Enter [Marek].
+7. Click &quot;OK&quot; button</steps>
+										<expected>The window with &quot;Enter name&quot; message will appear.
+
+[Final Result]
+
+The window with &quot;Enter name&quot; message appears. Appeared &quot;You have entered &apos;Marek&apos; !&quot; message.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C115</id>
+				<title>[C23] Verification of the operation of downloading messages</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C23]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Checking the function of generating and downloading a previously written message
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Generated File to Download&quot; panel
+
+[Test data]
+(Enter Data) 123!.</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;File Download&quot;
+4. Enter &quot;123!.&quot; message
+5. Click &quot;Generate File&quot; button.
+6. Click &quot;Download&quot; button. </steps>
+										<expected>The written message will be downloaded.
+
+[Final Result]
+
+A written message was downloaded.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C116</id>
+				<title>[C24] Moving single values from lists</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C24]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the operation of transferring one value to another list.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;List Box&quot;
+3. Press &quot;Bootstrap List Box&quot;
+4. Press &quot;bootstrap-duallist&quot; box
+5. Press &quot;&gt;&quot; button 
+</steps>
+										<expected>The &quot;bootstrap-duallist&quot; box will move to another list. 
+
+[Final Result]
+
+The &quot;bootstrap-duallist&quot; box moved to another list.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C117</id>
+				<title>[C24] Moving all values at once from lists</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the operation of transferring all value to another list.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;List Box&quot;
+3. Press &quot;Bootstrap List Box&quot;
+4. Press &quot;bootstrap-duallist&quot; box
+5. Press &quot;Select all&quot; button </steps>
+										<expected>All boxes will move to another list.
+
+[Final Result]
+
+All boxes button moved to another list.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C118</id>
+				<title>[C25] Adding one value to another list and removing it</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C25]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the operation of transferring one value to another list.
+
+[Preconditions]
+1. The website is launched
+2. Access to &quot;Pick List&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;List Box&quot;
+3. Press &quot;JQuery List Box&quot;
+4. Press &quot;Sophia&quot; value
+5. Press &quot;Add&quot; button 
+6. Press &quot;Sophia&quot; value
+7. Press &quot;Remove&quot; button </steps>
+										<expected>The &quot;Sophia&quot; value will move to another list and back to the first list. 
+
+[Final Result]
+
+The &quot;Sophia&quot; value moved to another list and back to the first list.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C119</id>
+				<title>[C25] Adding all values to the second list and removing it</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C25]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the operation of transferring all values to another list.
+
+[Preconditions]
+1. The website is launched
+2. Access to &quot;Pick List&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;List Box&quot;
+3. Press &quot;JQuery List Box&quot;
+4. Press &quot;Add all&quot; button 
+5. Press &quot;Remove All&quot; button </steps>
+										<expected>All values will move to another list and back to the first list.
+
+[Final Result]
+
+All values moved to another list and back to the first list.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C120</id>
+				<title>[C26] Search for values by Name</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C26]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of searching in the Table by Name.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+(Name) Brenda</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;List Box&quot;
+3. Press &quot;JData List Filter&quot;
+4. Press &quot;Searc Attendees... &quot; field
+5. Enter &quot;Brenda&quot;</steps>
+										<expected>All &quot;Brenda&quot; Names are displayed in the table.
+
+[Final Result]
+
+All &quot;Brenda&quot; Names are displayed in the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C121</id>
+				<title>[C26] Search for values by Phone Number</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C26]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of searching in the Table by Phone Number.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+(Phone Number) 644-555-2222</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;List Box&quot;
+3. Press &quot;JData List Filter&quot;
+4. Press &quot;Searc Attendees... &quot; field
+5. Enter &quot;644-555-2222&quot;</steps>
+										<expected>All &quot;644-555-2222&quot; Phones are displayed on the table.
+
+[Final Result]
+
+All &quot;644-555-2222&quot; Phones are displayed on the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C122</id>
+				<title>[C26] Search for values by email address</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C26]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Check the function of searching in the Table by email address.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+(email address) test2@company.com</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;List Box&quot;
+3. Press &quot;JData List Filter&quot;
+4. Press &quot;Searc Attendees... &quot; field
+5. Enter &quot;test2@company.com&quot;</steps>
+										<expected>All &quot;test2@company.com&quot; email addresses are displayed in the table.
+
+[Final Result]
+
+All &quot;test2@company.com&quot; email addresses are displayed in the table.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C123</id>
+				<title>[C27] Dragging items to a table</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C27]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the operation of transferring one value to another list.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Drag and Drop&quot; panel 
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Others&quot;
+3. Press &quot;Drag and Drop&quot;
+4. Press &quot;Draggable 1&quot; and move to &quot;Drop here&quot; empty field
+5. Press &quot;Draggable 2&quot; and move to &quot;Drop here&quot; empty field
+6. Press &quot;Draggable 3&quot; and move to &quot;Drop here&quot; empty field
+7. Press &quot;Draggable 4&quot; and move to &quot;Drop here&quot; empty field</steps>
+										<expected>The &quot;Draggable 1&quot;, &quot;Draggable 2&quot;, &quot;Draggable 3&quot;, and &quot;Draggable 4&quot; boxes will move to another list.
+
+[Final Result]
+
+The &quot;Draggable 1&quot;, &quot;Draggable 2&quot;, &quot;Draggable 3&quot;, and &quot;Draggable 4&quot; boxes moved to another list.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C124</id>
+				<title>[C28] Checking the &apos;get new user&apos; function</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C28]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the function of the new user&apos;s generator with photo, name, and last name.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Get Random User&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Others&quot;
+3. Press &quot;Dynamic Data Loading&quot;
+4. Press &quot;Get New User&quot; button</steps>
+										<expected>A photo of the new user with his or her name and last name will be displayed.
+
+[Final Result]
+
+A photo of the new user with his or her name and last name was displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C125</id>
+				<title>[C29] Correctness of graphs display</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																<estimate></estimate>
+																								<references>[C29]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the display of different tables.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Others&quot;
+3. Press &quot;Charts Demo&quot;</steps>
+										<expected>Different tables will appear. 
+
+[Final Result]
+
+Different tables appeared. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C126</id>
+				<title>[C30]  The correctness of the submenu in Input Forms</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C30]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of the submenu display in the main menu.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Menu List&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input forms&quot;
+3. Press &quot;Simple Form Demo&quot;
+4. In &quot;Menu List&quot; press &quot;Input forms&quot;
+5. Press &quot;Checkbox Demo&quot;
+6. In &quot;Menu List&quot; press &quot;Input forms&quot;
+7. Press &quot;Radio Buttons Demo&quot;
+8. In &quot;Menu List&quot; press &quot;Input forms&quot;
+9. Press &quot;Select Dropdown List&quot;
+10. In &quot;Menu List&quot; press &quot;Input forms&quot;
+11. Press &quot;Input Form Submit&quot;
+12. In &quot;Menu List&quot; press &quot;Input forms&quot;
+13. Press &quot;Ajax Form Submit&quot;
+14. In &quot;Menu List&quot; press &quot;Input forms&quot;
+15. Press &quot;JQuery Select dropdown&quot;
+</steps>
+										<expected>It is possible to navigate the site using the &quot;Input Forms&quot; submenu
+
+[Final Result]
+
+It is possible to navigate the site using the &quot;Input Forms&quot; submenu</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C127</id>
+				<title>[C30]  The correctness of the submenu in Data pickers</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C30]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of the submenu display in the main menu.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Menu List&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Date pickers&quot;
+3. Press &quot;Bootstrap Date Picker&quot;
+4. In &quot;Menu List&quot; press &quot;Date pickers&quot;
+5. Press &quot;JQuery Date Picker&quot;</steps>
+										<expected>It is possible to navigate the site using the &quot;Date pickers&quot; submenu
+
+[Final Result]
+
+It is possible to navigate the site using the &quot;Date pickers&quot; submenu</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C128</id>
+				<title>[C30]  The correctness of the submenu in Table</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C30]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of the submenu display in the main menu.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Menu List&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Table&quot;
+3. Press &quot;Table Pagination&quot;
+4. In &quot;Menu List&quot; press &quot;Table&quot;
+5. Press &quot;Table Data Search&quot;
+6. In &quot;Menu List&quot; press &quot;Table&quot;
+7. Press &quot;Table Filter&quot;
+8. In &quot;Menu List&quot; press &quot;Table&quot;
+9. Press &quot;Table Sort &amp; Search&quot;
+10. In &quot;Menu List&quot; press &quot;Table&quot;
+11. Press &quot;Table Data Download&quot;
+</steps>
+										<expected>It is possible to navigate the site using the &quot;Table&quot; submenu
+
+[Final Result]
+
+It is possible to navigate the site using the &quot;Table&quot; submenu</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C129</id>
+				<title>[C30]  The correctness of the submenu in Progress Bars &amp; Sliders</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C30]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of the submenu display in the main menu.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Menu List&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Progress Bars &amp; Sliders&quot;
+3. Press &quot;JQuery Download Progress bars&quot;
+4. In &quot;Menu List&quot; press &quot;Progress Bars &amp; Sliders&quot;
+5. Press &quot;Bootstrap Progress bar&quot;
+6. In &quot;Menu List&quot; press &quot;Progress Bars &amp; Sliders&quot;
+7. Press &quot;Drag &amp; Drop Sliders&quot;</steps>
+										<expected>It is possible to navigate the site using the &quot;Progress Bars &amp; Sliders&quot; submenu
+
+[Final Result]
+
+It is possible to navigate the site using the &quot;Progress Bars &amp; Sliders&quot; submenu</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C130</id>
+				<title>[C30]  The correctness of the submenu in Alerts &amp; Modals</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C30]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of the submenu display in the main menu.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Menu List&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Bootstrap Alerts&quot;
+4. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+5. Press &quot;Bootstrap Modals&quot;
+6. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+7. Press &quot;Window Popup Modal&quot;
+8. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+9. Press &quot;Progress Bar Modal&quot;
+10. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+11. Press &quot;Javascript Alerts&quot;
+12. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+13. Press &quot;File Download&quot;
+</steps>
+										<expected>It is possible to navigate the site using the &quot;Alerts &amp; Modals&quot; submenu
+
+[Final Result]
+
+It is possible to navigate the site using the &quot;Alerts &amp; Modals&quot; submenu</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C131</id>
+				<title>[C30]  The correctness of the submenu in List Box</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C30]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of the submenu display in the main menu.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Menu List&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;List Box&quot;
+3. Press &quot;Bootstrap List Box&quot;
+4. In &quot;Menu List&quot; press &quot;List Box&quot;
+5. Press &quot;JQuery List Box&quot;
+6. In &quot;Menu List&quot; press &quot;List Box&quot;
+7. Press &quot;Data List Filter&quot;</steps>
+										<expected>It is possible to navigate the site using the &quot;List Box&quot; submenu
+
+[Final Result]
+
+It is possible to navigate the site using the &quot;List Box&quot; submenu</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C132</id>
+				<title>[C30]  The correctness of the submenu in Others</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C30]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of the submenu display in the main menu.
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Menu List&quot; panel
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Others&quot;
+3. Press &quot;Drag and Drop&quot;
+4. In &quot;Menu List&quot; press &quot;Others&quot;
+5. Press &quot;Dynamic Data Loading&quot;
+6. In &quot;Menu List&quot; press &quot;Others&quot;
+7. Press &quot;Charts Demo&quot;</steps>
+										<expected>It is possible to navigate the site using the &quot;Others&quot; submenu
+
+[Final Result]
+
+It is possible to navigate the site using the &quot;Others&quot; submenu</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C133</id>
+				<title>[C31] Switching ads on the home page</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C31]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of switching ads on the home page. 
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Press &quot;&gt;&quot; button to switch ad
+3. Press &quot;&gt;&quot; button to switch ad
+4. Press &quot;&gt;&quot; button to switch ad
+5. Press &quot;&gt;&quot; button to switch ad</steps>
+										<expected>Switched through all 4 ads
+
+[Final Result]
+
+Switched through all 4 ads</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C134</id>
+				<title>[C32] Check the redirection to the appropriate page from basic menu examples</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C32]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of the submenu display in the main menu.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. On the center of page click orange &quot;&gt;&quot; button with level &quot;Basic&quot;
+3. Press &quot;Simple Form Demo&quot;
+4. Press &quot;&lt;-&quot; to back to the last page.
+5. On the center of page click orange &quot;&gt;&quot; button with level &quot;Basic&quot;
+6. Press &quot;Check box Demo&quot;
+7. Press &quot;&lt;-&quot; to back to the last page.
+8. On the center of page click orange &quot;&gt;&quot; button with level &quot;Basic&quot;
+9. Press &quot;Radio Buttons Demo&quot;
+10. Press &quot;&lt;-&quot; to back to the last page.
+11. On the center of page click orange &quot;&gt;&quot; button with level &quot;Basic&quot;
+12. Press &quot;Select Dropdown List&quot;
+13. Press &quot;&lt;-&quot; to back to the last page.
+14. On the center of page click orange &quot;&gt;&quot; button with level &quot;Basic&quot;
+15. Press &quot;Javascript Alerts&quot;
+16. Press &quot;&lt;-&quot; to back to the last page.
+17. On the center of page click orange &quot;&gt;&quot; button with level &quot;Basic&quot;
+18. Press &quot;Window Popup Modal&quot;
+19. Press &quot;&lt;-&quot; to back to the last page.
+20. On the center of page click orange &quot;&gt;&quot; button with level &quot;Basic&quot;
+21. Press &quot;Bootstrap Alerts&quot;
+22. Press &quot;&lt;-&quot; to back to the last page.
+23. On the center of page click orange &quot;&gt;&quot; button with level &quot;Basic&quot;
+24. Press &quot;Bootstrap Modals&quot;
+25. Press &quot;&lt;-&quot; to back to the last page.
+
+</steps>
+										<expected>It is possible to navigate the site using the &quot;Basic&quot; submenu
+
+[Final Result]
+
+It is possible to navigate the site using the &quot;Basic&quot; submenu</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C135</id>
+				<title>[C32] Check the redirection to the appropriate page from intermediate menu examples</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C32]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of the submenu display in the main menu.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. On the center of page click blue &quot;&gt;&quot; button with level &quot;Intermediate&quot;
+3. Press &quot;Input Form with Validations&quot;
+4. Press &quot;&lt;-&quot; to back to the last page.
+5. On the center of page click blue &quot;&gt;&quot; button with level &quot;Intermediate&quot;
+6. Press &quot;Ajax Form Submit&quot;
+7. Press &quot;&lt;-&quot; to back to the last page.
+8. On the center of page click blue &quot;&gt;&quot; button with level &quot;Intermediate&quot;
+9. Press &quot;JQuery Select dropdown&quot;
+10. Press &quot;&lt;-&quot; to back to the last page.
+11. On the center of page click blue &quot;&gt;&quot; button with level &quot;Intermediate&quot;
+12. Press &quot;Bootstrap List Box&quot;
+13. Press &quot;&lt;-&quot; to back to the last page.
+14. On the center of page click blue &quot;&gt;&quot; button with level &quot;Intermediate&quot;
+15. Press &quot;JQuery List Box&quot;
+16. Press &quot;&lt;-&quot; to back to the last page.
+17. On the center of page click blue &quot;&gt;&quot; button with level &quot;Intermediate&quot;
+18. Press &quot;Data List Filter&quot;
+19. Press &quot;&lt;-&quot; to back to the last page.
+20. On the center of page click blue &quot;&gt;&quot; button with level &quot;Intermediate&quot;
+21. Press &quot;Progress Bar Modal&quot;
+22. Press &quot;&lt;-&quot; to back to the last page.
+23. On the center of page click blue &quot;&gt;&quot; button with level &quot;Intermediate&quot;
+24. Press &quot;File Download&quot;
+25. Press &quot;&lt;-&quot; to back to the last page.</steps>
+										<expected>It is possible to navigate the site using the &quot;Intermediate&quot; submenu
+
+[Final Result]
+
+It is possible to navigate the site using the &quot;Intermediate&quot; submenu</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C136</id>
+				<title>[C32] Check the redirection to the appropriate page from advanced menu examples</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C32]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of the submenu display in the main menu.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. On the center of page click blue &quot;&gt;&quot; button with level &quot;Advanced&quot;
+3. Press &quot;Table Pagination&quot;
+4. Press &quot;&lt;-&quot; to back to the last page.
+5. On the center of page click blue &quot;&gt;&quot; button with level &quot;Advanced&quot;
+6. Press &quot;Table Data Search&quot;
+7. Press &quot;&lt;-&quot; to back to the last page.
+8. On the center of page click blue &quot;&gt;&quot; button with level &quot;Advanced&quot;
+9. Press &quot;Table Filter&quot;
+10. Press &quot;&lt;-&quot; to back to the last page.
+11. On the center of page click blue &quot;&gt;&quot; button with level &quot;Advanced&quot;
+12. Press &quot;Table Sort &amp; Search&quot;
+13. Press &quot;&lt;-&quot; to back to the last page.
+14. On the center of page click blue &quot;&gt;&quot; button with level &quot;Advanced&quot;
+15. Press &quot;Table Data Download&quot;
+16. Press &quot;&lt;-&quot; to back to the last page.
+17. On the center of page click blue &quot;&gt;&quot; button with level &quot;Advanced&quot;
+18. Press &quot;JQuery Download Progress bars&quot;
+19. Press &quot;&lt;-&quot; to back to the last page.
+20. On the center of page click blue &quot;&gt;&quot; button with level &quot;Advanced&quot;
+21. Press &quot;Bootstrap Progress bar&quot;
+22. Press &quot;&lt;-&quot; to back to the last page.
+23. On the center of page click blue &quot;&gt;&quot; button with level &quot;Advanced&quot;
+24. Press &quot;Drag &amp; Drop Sliders&quot;
+25. Press &quot;&lt;-&quot; to back to the last page.
+26. On the center of page click blue &quot;&gt;&quot; button with level &quot;Advanced&quot;
+27. Press &quot;Drag and Drop&quot;
+28. Press &quot;&lt;-&quot; to back to the last page.
+29. On the center of page click blue &quot;&gt;&quot; button with level &quot;Advanced&quot;
+30. Press &quot;Dynamic Data Loading&quot;
+31. Press &quot;&lt;-&quot; to back to the last page.
+32. On the center of page click blue &quot;&gt;&quot; button with level &quot;Advanced&quot;
+33. Press &quot;Charts Demo&quot;
+34. Press &quot;&lt;-&quot; to back to the last page.
+</steps>
+										<expected>It is possible to navigate the site using the &quot;Advanced&quot; submenu
+
+[Final Result]
+
+It is possible to navigate the site using the &quot;Advanced&quot; submenu</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C137</id>
+				<title>[C33] Checking the redirection to the sponsor site</title>
+												<template>Test Case (Text)</template>
+																<type>Destructive</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C33]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the sponsor web site. 
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Click on top web site &quot;Sponsored By SMARTBEAR CrossBrowserTesting&quot;.</steps>
+										<expected>It was redirected to the sponsor&apos;s website. 
+
+[Final Result]
+
+It was redirected to the sponsor&apos;s website. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C138</id>
+				<title>[C34] Checking the correctness of the redirection to the Selenium Tutorials website</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C34]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the Selenium Tutorials website.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Click on down web site &quot;Selenium Tutorials&quot; in the &quot;Tutorials Menu&quot; submenu</steps>
+										<expected>It was redirected to the Selenium Tutorials website.
+
+[Final Result]
+
+It was redirected to the Selenium Tutorials website.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C139</id>
+				<title>[C34] Checking the correctness of the redirection to the TestNG Tutorial website</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C34]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the TestNG Tutorial website.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Click on down web site &quot;TestNG Tutorial&quot; in the &quot;Tutorials Menu&quot; submenu</steps>
+										<expected>It was redirected to the Selenium TestNG Tutorial website.
+
+[Final Result]
+
+It was redirected to the Selenium TestNG Tutorial website.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C140</id>
+				<title>[C34] Checking the correctness of the redirection to the JUnit Tutorial website</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C34]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the JUnit Tutorial website.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Click on down web site &quot;JUnit Tutorial&quot; in the &quot;Tutorials Menu&quot; submenu</steps>
+										<expected>It was redirected to the JUnit Tutorial website.
+
+[Final Result]
+
+It was redirected to the JUnit Tutorial website.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C141</id>
+				<title>[C34] Checking the correctness of the redirection to the JXL Tutorial website</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C34]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the JXL Tutorial website.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None
+
+</preconds>
+										<steps>1. Open a website
+2. Click on down web site &quot;JXL Tutorial&quot; in the &quot;Tutorials Menu&quot; submenu</steps>
+										<expected>It was redirected to the JXL Tutorial website.
+
+[Final Result]
+
+It was redirected to the JXL Tutorial website.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C142</id>
+				<title>[C34] Checking the correctness of the redirection to the Apache POI website</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the Apache POI website.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Click on down web site &quot;Apache POI&quot; in the &quot;Tutorials Menu&quot; submenu</steps>
+										<expected>It was redirected to the Apache POI website.
+
+[Final Result]
+
+It was redirected to the Apache POI website.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C143</id>
+				<title>[C34] Checking the correctness of the redirection to the ANT Tutorial website</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C34]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the ANT Tutorial website.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Click on down web site &quot;ANT Tutorial&quot; in the &quot;Tutorials Menu&quot; submenu</steps>
+										<expected>It was redirected to the ANT Tutorial website.
+
+[Final Result]
+
+It was redirected to the ANT Tutorial website.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C144</id>
+				<title>[C34] Checking the correctness of the redirection to the Maven Tutorial website</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C34]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the Maven Tutorial website.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Click on down web site &quot;Maven Tutorial&quot; in the &quot;Tutorials Menu&quot; submenu</steps>
+										<expected>It was redirected to the Maven Tutorial website.
+
+[Final Result]
+
+It was redirected to the Maven Tutorial website.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C145</id>
+				<title>[C35] Checking the correctness of the redirection to the Gecko Driver Selenium 3 website</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C35]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the Gecko Driver Selenium 3 website.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Click on down web site &quot;Gecko Driver Selenium 3&quot; in the &quot;Popular Posts&quot; submenu</steps>
+										<expected>It was redirected to the Gecko Driver Selenium 3 website.
+
+[Final Result]
+
+It was redirected to the Gecko Driver Selenium 3 website.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C146</id>
+				<title>[C35] Checking the correctness of the redirection to the Page Factory Pattern website</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C35]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the Page Factory Pattern website.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Click on down web site &quot;Page Factory Pattern&quot; in the &quot;Popular Posts&quot; submenu</steps>
+										<expected>It was redirected to the Page Factory Pattern website.
+
+[Final Result]
+
+It was redirected to the Page Factory Pattern website.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C147</id>
+				<title>[C35] Checking the correctness of the redirection to the Execute Tests in Jenkins website</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C35]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the Execute Tests in Jenkins website.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Click on down web site &quot;Execute Tests in Jenkins&quot; in the &quot;Popular Posts&quot; submenu</steps>
+										<expected>It was redirected to the Execute Tests in Jenkins website.
+
+[Final Result]
+
+It was redirected to the Execute Tests in Jenkins website.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C148</id>
+				<title>[C35] Checking the correctness of the redirection to the TestNG Custom Report website</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C35]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the TestNG Custom Report website.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Click on down web site &quot;TestNG Custom Report&quot; in the &quot;Popular Posts&quot; submenu</steps>
+										<expected>It was redirected to the TestNG Custom Report website.
+
+[Final Result]
+
+It was redirected to the TestNG Custom Report website.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C149</id>
+				<title>[C35] Checking the correctness of the redirection to the Execute Selenium tests using Maven website</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C35]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the Execute Selenium tests using Maven website.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Click on down web site &quot;Execute Selenium tests using Maven&quot; in the &quot;Popular Posts&quot; submenu</steps>
+										<expected>It was redirected to the Execute Selenium tests using Maven website.
+
+[Final Result]
+
+It was redirected to the Execute Selenium tests using Maven website.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C150</id>
+				<title>[C35] Checking the correctness of the redirection to the View All Selenium Tutorials website</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C35]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>[Description]
+Verification of the correctness of redirection to the View All Selenium Tutorials website.
+
+[Preconditions]
+1. The website is launched
+
+[Test data]
+None</preconds>
+										<steps>1. Open a website
+2. Click on down web site &quot;View All Selenium Tutorials&quot; in the &quot;Popular Posts&quot; submenu</steps>
+										<expected>It was redirected to the View All Selenium Tutorials website.
+
+[Final Result]
+
+It was redirected to the View All Selenium Tutorials website.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
 			<section>
 		<name>Defect Raports</name>
 		<description></description>
-									</section>
+						
+		<cases>
+									
+						<case>
+				<id>C42</id>
+				<title>[C41] The &quot;Uncheck all&quot; button does not change to &quot;Check all&quot;</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C41]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Environment]
+Windows 10 x64
+Chrome 84.0.4147.135
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Multiple Checkbox Demo&quot; panel
+
+[Test data]
+None</mission>
+										<goals>[Steps]
+1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Checkbox Demo&quot;
+4. Click on the &quot;Check all&quot; button
+5. Click (uncheck) &quot;Option 1&quot; checkbox
+
+[Expected Result]
+&quot;Option 1&quot; checkbox will be unchecked. The button will change to &quot;Check All&quot;.
+
+[Final Result]
+&quot;Option 1&quot; checkbox is unchecked. The button will not change to &quot;Check All&quot;, is still &quot;Uncheck all&quot;.
+
+![](index.php?/attachments/get/1)
+![](index.php?/attachments/get/2)
+</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C151</id>
+				<title>[C51] The application does not display all previously selected items</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C51]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Environment]
+Windows 10 x64
+Chrome 84.0.4147.135
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Multi Select List Demo&quot; panel
+
+[Test data]
+None</mission>
+										<goals>[Steps]
+1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Select Dropdown List&quot;
+4. Select with the mouse under the last name of the city and drag up to select all items
+5. Click &quot;Get All Selected&quot; button
+
+[Expected Result]
+The message &quot;Options selected are: Ohio, California, Florida, New Jersey, New York, Texas, Washington, Pennsylvania&quot; will be displayed
+
+[Final Result]
+The message &quot;Options selected are: &quot; was displayed
+
+![](index.php?/attachments/get/3)
+
+![](index.php?/attachments/get/4)
+
+[Comment]
+This function only works with the &quot;Crtl&quot; + left mouse button.</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C152</id>
+				<title>[C54] The form takes the wrong data</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C54]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Environment]
+Windows 10 x64
+Chrome 84.0.4147.135
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Input form with validations&quot; panel
+
+[Test data]
+(First Name) - 111111</mission>
+										<goals>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Input Form&quot;
+3. Press &quot;Input Form Submit&quot;
+4. Enter in the (First Name) field, type &quot;111111&quot;
+5. Click the &quot;Send&quot; button
+
+[Expected Result]
+The form will not be sent
+
+[Final Result]
+The form was sent
+
+![](index.php?/attachments/get/5)
+</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C153</id>
+				<title>[C107] Facebook page has not appeared</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C107]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Environment]
+Windows 10 x64
+Chrome 84.0.4147.135
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Multiple Window Modal&quot; panel
+
+[Test data]
+None</mission>
+										<goals>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Window Popup Modal&quot;
+4. Click &quot;Follow Twitter &amp; Facebook&quot; button.
+
+[Expected Result]
+The Twitter and Facebook page will appear.
+
+[Final Result]
+The Twitter page appeared. The Facebook page will not appear.
+
+![](index.php?/attachments/get/6)
+</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C154</id>
+				<title>[C108]  Twitter and Google Plus page has not appeared</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>[C108]</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>[Environment]
+Windows 10 x64
+Chrome 84.0.4147.135
+
+[Preconditions]
+1. The website is launched
+2. Access to the &quot;Multiple Window Modal&quot; panel
+
+[Test data]
+None
+
+</mission>
+										<goals>1. Open a website
+2. In &quot;Menu List&quot; press &quot;Alerts &amp; Modals&quot;
+3. Press &quot;Window Popup Modal&quot;
+4. Click &quot;Follow All&quot; button.
+
+[Expected Result]
+The Twitter and Facebook page will appear.
+
+[Final Result]
+The Twitter page appeared. The Facebook page will not appear.
+
+![](index.php?/attachments/get/7)
+</goals>
+									</custom>
+							</case>
+								</cases>
+							</section>
 	</sections>
 </suite>
